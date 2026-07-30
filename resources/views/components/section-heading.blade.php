@@ -1,0 +1,2 @@
+@props(['eyebrow' => null, 'title', 'text' => null, 'light' => false])
+<div {{ $attributes->merge(['class' => 'max-w-3xl']) }}>@if($eyebrow)<p class="eyebrow {{ $light ? 'text-gold' : '' }}">{{ $eyebrow }}</p>@endif<h2 class="mt-3 font-serif text-3xl leading-tight md:text-5xl {{ $light ? 'text-white' : 'text-navy' }}">{{ $title }}</h2>@if($text)<p class="mt-5 leading-8 {{ $light ? 'text-stone' : 'text-muted' }}">{{ $text }}</p>@endif</div>

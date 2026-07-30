@@ -1,11 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;600;700&display=swap');
 @import 'tailwindcss';
-
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
-
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
-}
+@source '../views';
+@theme { --color-navy:#0B1F33; --color-charcoal:#161C22; --color-ivory:#F7F3EA; --color-stone:#E8E2D7; --color-gold:#B89A5E; --color-muted:#66717D; --font-sans:'IBM Plex Sans Arabic',sans-serif; --font-serif:'Noto Naskh Arabic',serif; }
+@layer components { .shell { @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10; } .btn { @apply items-center justify-center px-5 py-3 text-sm font-bold transition focus:outline-none focus:ring-2 focus:ring-offset-2; } .btn-gold { @apply bg-gold text-navy hover:bg-white focus:ring-gold; } .btn-outline { @apply border border-white/50 text-white hover:border-gold hover:bg-gold hover:text-navy focus:ring-gold; } .eyebrow { @apply text-xs font-bold tracking-[.18em] text-gold; } .footer-title { @apply mb-4 font-serif text-xl text-white; } .footer-link { @apply mb-2 block text-sm transition hover:text-gold; } }
+html { scroll-behavior:smooth; } body { overflow-x:hidden; } ::selection { background:#B89A5E; color:#0B1F33; } @media (prefers-reduced-motion: reduce) { *,::before,::after { scroll-behavior:auto !important; transition-duration:.01ms !important; } }
