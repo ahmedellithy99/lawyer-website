@@ -1,0 +1,2 @@
+@props(['item', 'index'])
+<article class="border-b border-stone" x-data="{ expanded: false }"><button class="flex w-full items-center justify-between gap-5 py-5 text-right font-bold text-navy focus:outline-none focus:ring-2 focus:ring-gold" @click="expanded=!expanded" :aria-expanded="expanded.toString()"><span>{{ $item['q'] }}</span><span class="text-gold" x-text="expanded ? '−' : '+'" aria-hidden="true"></span></button><div x-show="expanded" x-transition><p class="pb-5 leading-8 text-muted">{{ $item['a'] }}</p></div></article>
