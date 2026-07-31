@@ -20,7 +20,7 @@ return [
     ],
     'nav' => [
         ['label' => 'الرئيسية', 'route' => 'home'], ['label' => 'من نحن', 'route' => 'about'],
-        ['label' => 'مجالات الممارسة', 'route' => 'practice-areas'], ['label' => 'المحامي المؤسس', 'route' => 'founder'],
+        ['label' => 'مجالات الممارسة', 'route' => 'practice-areas'],
         ['label' => 'الأسئلة الشائعة', 'route' => 'home', 'fragment' => 'faq'], ['label' => 'تواصل معنا', 'route' => 'contact'],
     ],
     'practices' => [
